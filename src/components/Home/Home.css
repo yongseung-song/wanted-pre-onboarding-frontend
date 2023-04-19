@@ -1,0 +1,39 @@
+body {
+  background-color: #f0eee4;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  height: 480px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container > div {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(230, 230, 230);
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.home p {
+  font-size: 0.7em;
+  width: 220px;
+  word-break: normal;
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: #f0eee4;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 480px;
+  height: 480px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container div {
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+form label {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 10px;
+}
+.signin {
+  font-size: 0.75em;
+}
