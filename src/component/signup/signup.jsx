@@ -90,7 +90,7 @@ function SignUp() {
         <button
           type="submit"
           disabled={!isValidEmail(email) || !isValidPassword(password)}
-          data-testid="signin-button"
+          data-testid="signup-button"
         >
           회원 가입
         </button>
