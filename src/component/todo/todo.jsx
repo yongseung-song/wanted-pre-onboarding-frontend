@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
-import { AppContext } from "../../App";
-// import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Task from "./task";
 
 function Todo() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
-  const { logout } = useContext(AppContext);
   const jwtToken = localStorage.getItem("jwtToken");
+  const navigate = useNavigate();
 
   const fetchTasks = async (operation, taskData) => {
     let url = "https://www.pre-onboarding-selection-task.shop/todos";
@@ -69,6 +68,8 @@ function Todo() {
   useEffect(() => {
     if (jwtToken) {
       fetchTasks("get");
+    } else {
+      navigate("/");
     }
   }, []);
 
@@ -117,7 +118,7 @@ function Todo() {
 
   return (
     <div className="container todo">
-      <h1>ToDo List</h1>
+      <h1>My Todos</h1>
       <form className="todo" onSubmit={handleNewTaskSubmit}>
         <input
           data-testid="new-todo-input"

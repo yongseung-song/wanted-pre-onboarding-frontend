@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useAuth } from "../../util/authContext";
 import { AppContext } from "../../App";
 
 function SignIn() {
@@ -55,8 +54,7 @@ function SignIn() {
       } else {
         const errorData = await response.json();
         console.error(errorData.message);
-        alert("존재하지 않는 계정입니다.");
-        // throw new Error("Unauthorized");
+        alert(errorData.message);
       }
     } catch (error) {
       console.error("Fetch Error:", error);

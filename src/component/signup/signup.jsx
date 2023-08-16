@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../util/authContext";
 
 function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const jwtToken = localStorage.getItem("jwtToken");
 
+  //이메일 유효성 검사
   const isValidEmail = (email) => {
     return email.includes("@");
   };
 
+  //비밀번호 유효성 검사
   const isValidPassword = (password) => {
     return password.length >= 8;
   };
@@ -36,7 +36,6 @@ function SignUp() {
     } else if (name === "password") {
       setPassword(value);
     }
-    // console.log(name, value);
   };
 
   async function handleSubmit(e) {

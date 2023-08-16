@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div className="home container">
-      <h1>To-Do list</h1>
+      <h1>To Do list</h1>
       <button
         data-testid="signin-button"
         onClick={() => {

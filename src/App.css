@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -22,12 +25,10 @@ form {
   width: 500px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 10px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 1rem 3rem;
-  /* background-color: #555; */
   box-sizing: border-box;
 }
 form label {
@@ -57,7 +58,7 @@ button {
   border: none;
 }
 
-form button:hover {
+button:hover {
   background-color: #3983ac;
 }
 form button:disabled {
@@ -71,8 +72,6 @@ form span {
 }
 
 form.todo {
-  /* background-color: #aaa; */
-  /* color: magenta; */
   display: flex;
   flex-direction: row;
 }
@@ -123,5 +122,5 @@ li.todo button {
   margin-left: 3px;
 }
 li.todo button:hover {
-  background-color: #3983ac;
+  background-color: #4091bd;
 }
