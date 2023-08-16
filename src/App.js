@@ -22,6 +22,7 @@ function App() {
       // paths 외 다른 페이지 접근시에는 404 error 페이지롤 보여준다.
       navigate("/todo");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

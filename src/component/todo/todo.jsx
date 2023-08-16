@@ -71,6 +71,7 @@ function Todo() {
     } else {
       navigate("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const addTask = async (newTask) => {
