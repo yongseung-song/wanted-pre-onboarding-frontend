@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/yongseung-song/wanted-pre-onboarding-frontend/static/css/main.2499c094.css",
-    "main.js": "/yongseung-song/wanted-pre-onboarding-frontend/static/js/main.55522664.js",
-    "static/js/787.4ac3f93e.chunk.js": "/yongseung-song/wanted-pre-onboarding-frontend/static/js/787.4ac3f93e.chunk.js",
-    "index.html": "/yongseung-song/wanted-pre-onboarding-frontend/index.html",
-    "main.2499c094.css.map": "/yongseung-song/wanted-pre-onboarding-frontend/static/css/main.2499c094.css.map",
-    "main.55522664.js.map": "/yongseung-song/wanted-pre-onboarding-frontend/static/js/main.55522664.js.map",
-    "787.4ac3f93e.chunk.js.map": "/yongseung-song/wanted-pre-onboarding-frontend/static/js/787.4ac3f93e.chunk.js.map"
+    "main.css": "/wanted-pre-onboarding-frontend/static/css/main.2499c094.css",
+    "main.js": "/wanted-pre-onboarding-frontend/static/js/main.a04ff28a.js",
+    "static/js/787.4ac3f93e.chunk.js": "/wanted-pre-onboarding-frontend/static/js/787.4ac3f93e.chunk.js",
+    "index.html": "/wanted-pre-onboarding-frontend/index.html",
+    "main.2499c094.css.map": "/wanted-pre-onboarding-frontend/static/css/main.2499c094.css.map",
+    "main.a04ff28a.js.map": "/wanted-pre-onboarding-frontend/static/js/main.a04ff28a.js.map",
+    "787.4ac3f93e.chunk.js.map": "/wanted-pre-onboarding-frontend/static/js/787.4ac3f93e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2499c094.css",
-    "static/js/main.55522664.js"
+    "static/js/main.a04ff28a.js"
   ]
 }
