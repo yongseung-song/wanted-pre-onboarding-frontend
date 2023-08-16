@@ -9,8 +9,9 @@ function Task({ taskData, onUpdate, onDelete }) {
   };
 
   return (
-    <li className="toDo">
+    <li className="todo">
       <input
+        className="checkbox"
         name=""
         type="checkbox"
         checked={taskData.isCompleted}

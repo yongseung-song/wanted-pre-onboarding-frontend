@@ -5,7 +5,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="home container">
       <h1>To-Do list</h1>
       <button
         data-testid="signin-button"

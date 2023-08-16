@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AppContext } from "../../App";
 // import { useNavigate } from 'react-router-dom';
 import Task from "./task";
 
 function Todo() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+  const { logout } = useContext(AppContext);
   const jwtToken = localStorage.getItem("jwtToken");
 
   const fetchTasks = async (operation, taskData) => {
@@ -49,7 +51,7 @@ function Todo() {
       if (operation === "get") {
         const data = await response.json();
         setTasks(data);
-        console.log(data);
+        // console.log(data);
       } else if (operation === "delete") {
         return true;
       } else {
@@ -76,10 +78,6 @@ function Todo() {
       setTasks((prevTasks) => [...prevTasks, createdTask]);
     }
   };
-
-  // const updateTask = (id, editedContent) => {
-  //   fetchTasks('update', { id, content: editedContent });
-  // };
 
   async function updateTask(taskData, updateType = "content", editedContent) {
     const updatedTaskData =
@@ -117,18 +115,14 @@ function Todo() {
     }
   };
 
-  const terminateJWT = () => {
-    localStorage.removeItem("jwtToken");
-  };
-
   return (
     <div className="container todo">
       <h1>ToDo List</h1>
-      <form className="toDo" onSubmit={handleNewTaskSubmit}>
+      <form className="todo" onSubmit={handleNewTaskSubmit}>
         <input
           data-testid="new-todo-input"
           type="text"
-          placeholder="Add a new task"
+          placeholder="새 할 일 입력하기..."
           value={newTask}
           onChange={handleNewTaskChange}
         />
@@ -136,7 +130,7 @@ function Todo() {
           추가
         </button>
       </form>
-      <ul className="toDo">
+      <ul className="todo">
         {tasks.map((task) => (
           <Task
             key={task.id}
@@ -146,16 +140,6 @@ function Todo() {
           />
         ))}
       </ul>
-      {/* <button className="hidden" onClick={terminateJWT}>
-        remove JWT
-      </button> */}
-      <button
-        onClick={() => {
-          fetchTasks("get");
-        }}
-      >
-        확인하기
-      </button>
     </div>
   );
 }

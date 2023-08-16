@@ -13,26 +13,20 @@ export const AppContext = createContext();
 function App() {
   const [token, setToken] = useState(localStorage.getItem("jwtToken"));
   const navigate = useNavigate();
-
-  const logout = () => {
-    localStorage.removeItem("jwtToken");
-    setToken(null);
-  };
+  const paths = ["/", "/signin", "/signup", "/todo"];
 
   useEffect(() => {
     const token = localStorage.getItem("jwtToken");
-    if (token) {
+    if (token && paths.includes(window.location.pathname)) {
       // 토큰이 있다면 Todo 페이지로 리다이렉트
-      navigate("/todos");
+      // paths 외 다른 페이지 접근시에는 404 error 페이지롤 보여준다.
+      navigate("/todo");
     }
   }, []);
 
-  if (token && window.location.pathname !== "/todo") {
-    navigate("/todo");
-  }
   return (
     <div className="App">
-      <AppContext.Provider value={{ token, setToken, logout }}>
+      <AppContext.Provider value={{ token, setToken }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
