@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# To Do list
+지원자 이름 : 송용승
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 실행 방법
+해당 프로젝트를 실행하는 방법은 두가지가 있습니다. 
+1. 개발서버를 통한 실행 - 해당 프로젝트를 `git clone` 후 `npm install & npm start` 명령어를 통해서 localhost 에서 실행합니다.
+2. 배포 사이트를 통한 실행 - [배포 사이트](https://wanted-pre-onboarding-frontend-yongseung-song.vercel.app/) 에 접속하여 실행합니다.
 
-## Available Scripts
+## 사용 방법
+### 홈페이지
+![image](https://github.com/yongseung-song/wanted-pre-onboarding-frontend/assets/94284382/e24e1720-353b-47a0-9319-9733610113d4)
+프로젝트를 실행하면 보이는 첫 화면입니다. 여기서 로그인이나 회원가입 버튼을 눌러 해당 페이지로 이동할 수 있습니다.
+### 회원가입 페이지
+![image](https://github.com/yongseung-song/wanted-pre-onboarding-frontend/assets/94284382/5774cb99-6614-4d15-98c0-5030c560f7b6)
+회원가입 페이지입니다. 이메일과 암호 조건에 따라 계정을 생성할 수 있습니다.
+### 로그인 페이지
+![image](https://github.com/yongseung-song/wanted-pre-onboarding-frontend/assets/94284382/9cbe49e2-1c97-43b8-9eb5-d03b532ab48b)
+로그인 화면입니다. 생성한 계정의 이메일과 암호를 입력해 로그인 할 수 있습니다.
+### My Todos 페이지
+![image](https://github.com/yongseung-song/wanted-pre-onboarding-frontend/assets/94284382/2a99931e-c647-47bb-919c-3656cb48703f)
+내 할 일을 추가, 수정, 완료 체크 및 삭제 할 수 있습니다.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 데모 영상
+데모 영상은 배포 사이트 링크로 대체합니다. [https://wanted-pre-onboarding-frontend-yongseung-song.vercel.app/](https://wanted-pre-onboarding-frontend-yongseung-song.vercel.app/)
